@@ -1,6 +1,6 @@
-// self executing main function
-(function($) {
-  console.log('Welcome to the calculator app');
+/* use strict */
 
-  //--------------- put your code below this line -------------
-})(jQuery);
+import Calculator from './calculator.js';
+
+const calc = new Calculator(document.querySelector('.calcontainer'));
+calc.run();
